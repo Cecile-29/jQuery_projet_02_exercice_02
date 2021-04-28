@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+	<title>jQuery_projet_02_exercice_02</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid bg-primary row P-3 justify-content-center">
+		<h1 class="col-12 p-4 text-center">jQuery_projet_02 Exercice_02</h1>
+		<p class="col-9 p-4 text-center">Au double click, modifier la largeur de l'image à 500px;</p>
+		<div class="offset-1 col-10 row justify-content-center">
+			<div class="bg-secondary m-4">
+        <img class="img-fluid" src="./assets/img/image.jpg" id="image" alt="image PHP"/>
+      </div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js">
+	</script>
+	<script>
+	 $(document).ready(function() {
+    //La méthode dblclick() permet de gérer un événement doubleclick, c’est-à-dire un double clic sur un élément, ici l'image
+    $('#image').dblclick(function() {
+      // on applique ici une propriété css de largeur 500px;
+      $('#image').css({'width': '500px'});
+    });
+	 });
+	</script>
+</body>
+</html>
